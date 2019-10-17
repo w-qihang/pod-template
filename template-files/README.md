@@ -1,3 +1,8 @@
+使用fastlane快速发布pods
+
+```ruby
+fastlane release_pod repo:ZYSpec project:'框架名' version:'版本'
+```
 # %ZYTemplateName%
 
 [![Version](https://img.shields.io/cocoapods/v/%ZYTemplateName%.svg?style=flat)](http://cocoapods.org/pods/%ZYTemplateName%)

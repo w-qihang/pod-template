@@ -5,11 +5,6 @@
 ```ruby
 $ configspec
 ```
-使用fastlane快速发布pods
-
-```ruby
-fastlane release_pod repo:ZYSpec project:'框架名' version:'版本'
-```
 
 [**博客介绍**](http://ripperhe.com/2017/03/30/fastlane-pod/)
 
