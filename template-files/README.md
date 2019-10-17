@@ -24,11 +24,7 @@ pod "%ZYTemplateName%"
 ```
 
 ## Useage
-
-## Author
-
-ripper, ripperhe@qq.com
-
+	
 ## License
 
 %ZYTemplateName% is available under the MIT license. See the LICENSE file for more info.
