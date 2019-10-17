@@ -1,5 +1,16 @@
 # pod-template
 
+直接到工程根目录下，直接执行 `configspec` 即可快速配置。
+
+```ruby
+$ configspec
+```
+使用fastlane快速发布pods
+
+```ruby
+fastlane release_pod repo:ZYSpec project:'框架名' version:'版本'
+```
+
 [**博客介绍**](http://ripperhe.com/2017/03/30/fastlane-pod/)
 
 快速创建发布 Pod 需要的文件的脚本
@@ -31,19 +42,5 @@ $ ruby 本仓库路径/prepare_release.rb
 可以将本地仓库固定在某个路径，然后设置一个命令别名，例如用 [Oh My Zsh](http://ohmyz.sh/)的朋友，可以直接在 `~/.zshrc` 文件末尾加上别名设置
 
 ```ruby
-alias pre='ruby 本仓库路径/prepare_release.rb'
+alias configspec='ruby 本仓库路径/prepare_release.rb'
 ```
-
-以后就可以直接到工程根目录下，直接执行 `pre` 即可。
-
-```ruby
-$ pre
-```
-
-## Author
-
-ripperhe, ripperhe@qq.com
-
-## License
-
-Fastlane-files is available under the MIT license. See the LICENSE file for more info.
