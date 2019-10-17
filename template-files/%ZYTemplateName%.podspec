@@ -12,7 +12,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = '%ZYTemplateName%/Classes/**/*'
+  s.source_files = '%ZYTemplateName%/%ZYTemplateName%/**/*.{h,m,swift}'
 
   # s.resource_bundles = {
   #   '%ZYTemplateName%' => ['%ZYTemplateName%/Assets/*.png']
