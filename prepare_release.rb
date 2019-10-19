@@ -54,6 +54,7 @@ end
 2. LICENSE (默认 MIT)
 3. %ZYTemplateName%.podspec
 4. fastlane/Fastfle
+5. Podfile
 =end
 
 # 获取仓库名字
@@ -87,6 +88,8 @@ license_name = 'LICENSE'
 spec_name = "#{tmp_name}.podspec"
 fast_dir_name = 'fastlane'
 fast_file_name = 'Fastfile'
+podfile_name = 'Podfile'
+gitignore_name = '.gitignore'
 
 new_spec_name = "#{new_lib_name}.podspec"
 tmp_prefix = 'template.'
@@ -142,6 +145,30 @@ if File.exist?(fast_dir_name + '/' + fast_file_name)
   create_file(fast_dir_name + '/' + tmp_prefix + fast_file_name, fastlane_content)
 else
   create_file(fast_dir_name + '/' + fast_file_name, fastlane_content)
+end
+
+# 5. Podfile
+time_puts '---------------------'
+time_puts '----Step: Podfile ---'
+time_puts '---------------------'
+podfile_content = get_file_content(source_path + podfile_name)
+podfile_content.gsub!(tmp_name, new_lib_name)
+if File.exist?(podfile_name)
+    create_file(tmp_prefix + podfile_name, podfile_content)
+    else
+    create_file(podfile_name, podfile_content)
+end
+
+# 6. gitignore
+time_puts '---------------------'
+time_puts '----Step: gitignore ---'
+time_puts '---------------------'
+gitignore_content = get_file_content(source_path + gitignore_name)
+gitignore_content.gsub!(tmp_name, new_lib_name)
+if File.exist?(gitignore_name)
+    create_file(tmp_prefix + gitignore_name, gitignore_content)
+    else
+    create_file(gitignore_name, gitignore_content)
 end
 
 time_puts '------------------------- 华丽的分割线 -------------------------'

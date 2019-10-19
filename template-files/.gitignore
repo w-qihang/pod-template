@@ -1,0 +1,6 @@
+%ZYTemplateName%.xcodeproj/xcuserdata/
+%ZYTemplateName%.xcworkspace/
+Pods/
+*.swp
+.DS_Store
+%ZYTemplateName%.xcodeproj/project.xcworkspace/xcuserdata/
