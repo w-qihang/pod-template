@@ -3,4 +3,5 @@
 Pods/
 *.swp
 .DS_Store
+*/.DS_Store
 %ZYTemplateName%.xcodeproj/project.xcworkspace/xcuserdata/
